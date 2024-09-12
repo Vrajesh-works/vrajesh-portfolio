@@ -9,7 +9,7 @@ Welcome to my portfolio website repository! This site showcases my work, skills,
 - **Projects:** A showcase of my work with descriptions and links to live demos or repositories.
 - **Contact:** Information on how to get in touch with me.
 
-- ## Contact
+## Contact
 
 - **Mail:** nasit.v@northeastern.edu
 
