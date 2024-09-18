@@ -1,219 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" >
 
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo"><h2>Vrajesh Nasit</h2></div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experiance">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#Contact">Contacts</a></li>
-            </ul>
-        </div>    
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo"><h2>Vrajesh Nasit</h2></div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="header">
+        <a href="#" class="logo"><span>Vrajesh Nasit</span></a>
+         <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#Experience">Experience</a>
+            </li>
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+            
+         </ul>
+
+         <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+         <button class="visit-btn">Visit Linkedin</button>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="./assets/vrajesh.png" alt="vrajesh">
+            <div class="info-box">
+            <div class="text">
+                <h3>Hi, I'm</h3>
+                <h1>Vrajesh Nasit</h1>
+                <span>UI/UX Developer</span>
             </div>
-            <div class="menu-links ">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experiance" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#Contact" onclick="toggleMenu()">Contacts</a></li>
+
+            <div class="btn-group">
+                <div class="btn">Download CV</div>
+                <div class="btn">Contact</div>
             </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/vrajesh.png" alt="Vrajesh profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Vrajesh Nasit</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-            <div class ="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/vrajesh.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+            <div class="socials">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
-            <div id="social-container">
-                <img src="./assets/linkedin.png" alt="My linkedin" class="icon" onclick="location.href='https://in.linkedin.com/in/vrajesh-nasit'"/>
-                <img src="./assets/github.png" alt="My Video" class="icon" onclick="location.href='https://github.com/Vrajesh-works'"/>
             </div>
         </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get to know more</p>
-        <h1 class="title">About me</h1>
-        <div class="section-container">
-            <video width="384" height="216" controls>
-                <source src="./assets/vrajesh.mp4" type="video/mp4">
-            </video>            <div class="about-details-container">
-            <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>1+ years <br> UX/UI Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.Tech Computer Engineering<br />Charusat University</p>
-                    </div>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-user"></i>
+                    <span> CTO </span>
+                    <h3> 6 months </h3>
+                    <p>Developed responsive, well-documented, and reusable code for various web applications using Node and React,
+                        ensuring seamless functionality across devices.
+                    </p>
                 </div>
-                <div class="text-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt est et velit, dolore aperiam atque. Rem culpa veniam omnis sit quidem maxime exercitationem? Molestias assumenda earum unde repudiandae quas eum, possimus, maiores beatae quis sed aperiam nostrum iusto. Eveniet quod impedit, quo delectus labore repellendus debitis voluptas eum corporis!
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span> Frontend Developer </span>
+                    <h3> 6 months </h3>
+                    <p>Developed responsive, well-documented, and reusable code for various web applications using Node and React,
+                        ensuring seamless functionality across devices.
+                    </p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span> UI/UX Designer </span>
+                    <h3> 6 months </h3>
+                    <p>Achieved 20% increase in user engagement for Siila site by leveraging user-first design principles and conducting
+                        in-depth user research.                        
                     </p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experiance'" />
     </section>
 
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Bootstrap</h3>
-                                <p>Intermediate</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Javascript</h3>
-                                <p>Intermediate</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Typescript</h3>
-                                <p>Basic</p>
-                                                        
-                            </div>                    
-                        </article>
-                    </div>                
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+            <div class="projects-card">
+                <img src="assets/project-1.png" alt="">
+                <h3>Victory Magazine</h3>
+                <p>Designed eye-catching magazine layouts and visuals, improving readership by 15% through innovative use of
+                    typography, color, and imagery.
+                </p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Case Study</div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">UI/UX Designing</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Experienced</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Adobe XD</h3>
-                                <p>Experienced</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Photoshop</h3>
-                                <p>Intermediate</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Sketch</h3>
-                                <p>Intermediate</p>
-                                                        
-                            </div>                    
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />   
-                            <div>
-                                <h3>Wordpress</h3>
-                                <p>Basic</p>                  
-                            </div>                    
-                        </article>
-                    </div>                
+            </div>
+            <div class="projects-card">
+                <img src="assets/project-2.png" alt="">
+                <h3>Classy App</h3>
+                <p>Designed eye-catching magazine layouts and visuals, improving readership by 15% through innovative use of
+                    typography, color, and imagery.
+                </p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Case Study</div>
+                </div>
+            </div>
+            <div class="projects-card">
+                <img src="assets/project-3.png" alt="">
+                <h3>Victory Magazine</h3>
+                <p>Designed eye-catching magazine layouts and visuals, improving readership by 15% through innovative use of
+                    typography, color, and imagery.
+                </p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Case Study</div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section id="contact">
-        <text><h2>Contact Me</h2></text>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
 
-        <p>Phone: <a href="tel:+18573398480">+1(857)339-8480</a></p>
-        <p>Email: <a href="mailto:nasit.v@northeastern.edu">nasit.v@northeastern.edu</a></p>
+
     </section>
 
-    <menu>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experiance">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#Contact">Contacts</a></li>
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="btn">Submit</div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#Experience">Experience</a>
+            </li>
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
         </ul>
-    </menu>
-    <summary>
-        <p>This is a portfolio website showcasing my work and providing contact information.</p>
-    </summary>
-    <text>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </text>
-    <script src="script.js"></script>
 
+        <p class="copyright">© All rights Reserved | vrajesh nasit</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
